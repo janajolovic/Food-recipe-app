@@ -15,7 +15,7 @@
 .search {
     display: flex;
     flex-direction: row;
-    margin: 20px auto;
+    margin: 20px auto 0px auto;
     width: 25%;
 }
 
@@ -39,4 +39,42 @@
     color: white;
     border: none;
     margin: 0px 10px;
+}
+
+.meals-results h1 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.meal-item {
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    box-shadow: 0px 4px 21px -12px rgba(0, 0, 0, 0.79);
+}
+
+.meal-img img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.meal-item h3 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.recipe-btn {
+    color: white;
+    background-color: orange;
+    padding: 1rem 0rem;
+    margin: 1rem auto;
+    font-weight: 500;
+    width: 7rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.meal-text {
+    padding-bottom: 0.5rem;
 }
