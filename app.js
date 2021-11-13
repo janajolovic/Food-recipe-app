@@ -1,11 +1,12 @@
 const searchBtn = document.querySelector(".search-btn");
 const mealList = document.querySelector(".meal");
 const mealDetailContent = document.querySelector(".meal-details-content");
-const recipeCloseBtn = document.querySelector(".close-btn");
+let MealDetails = document.querySelector(".meal-details")
 
 searchBtn.addEventListener("click", getMealList);
 
 mealList.addEventListener("click", getMealRecipe);
+
 
 
 function getMealList() {
@@ -29,6 +30,8 @@ function getMealList() {
                     `
 
                 })
+            } else {
+                html += `<h2>Sorry we couldn't find any meals.</h2>`;
             }
             mealList.innerHTML = html;
 
@@ -67,10 +70,12 @@ function getMealRecipe(e) {
                         `
                 }
 
-                console.log(html)
-                let MealDetails = document.querySelector(".meal-details")
                 MealDetails.style.display = "block";
                 MealDetails.innerHTML = html;
+                const recipeCloseBtn = document.querySelector(".close-btn");
+                recipeCloseBtn.addEventListener("click", () => {
+                    MealDetails.style.display = 'none'
+                })
             })
     }
 }
