@@ -28,10 +28,11 @@ function getMealList() {
                             </div>
                         </div>
                     `
-
+                    mealList.classList.remove("not-found");
                 })
             } else {
                 html += `<h2>Sorry we couldn't find any meals.</h2>`;
+                mealList.classList.add("not-found");
             }
             mealList.innerHTML = html;
 

@@ -102,10 +102,10 @@
     transform: translate(-50%, -50%);
     color: white;
     background-color: orange;
-    width: 90%;
+    width: 70%;
     height: 90%;
     border-radius: 1rem;
-    padding: 2rem 0rem;
+    padding: 2rem 3rem;
     overflow-y: scroll;
     text-align: center;
     display: none;
@@ -143,6 +143,7 @@
     font-weight: 500;
     border-radius: 0.3rem;
     padding: 0.2rem 1rem;
+    min-width: 150px;
 }
 
 .meal-details-content p {
@@ -178,3 +179,6 @@
     text-decoration: underline;
 }
 
+.not-found {
+    grid-template-columns: 1fr;
+}
