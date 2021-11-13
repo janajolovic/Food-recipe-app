@@ -138,10 +138,14 @@
     color: orange;
     font-weight: 500;
     border-radius: 0.3rem;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 1rem;
 }
 
-.meal-instruction {
+.meal-details-content p {
+    padding: 1rem 0;
+}
+
+.meal-instructions {
     padding: 1rem 0;
 }
 
@@ -151,5 +155,22 @@
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+}
+
+.meal-link a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.4s linear;
+    text-decoration: none;
+}
+
+.meal-link {
+    margin: 1rem 0;
+}
+
+.meal-link a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
