@@ -86,3 +86,70 @@
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
+
+.meal-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: orange;
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
+    padding: 2rem 0rem;
+    overflow-y: scroll;
+    text-align: center;
+    /* display: none; */
+}
+
+.meal-details-content {
+    margin: 2rem;
+}
+
+.showRecipe {
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem; 
+    border: none;
+    background-color: white;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.meal-title {
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+.meal-category {
+    display: inline-block;
+    background-color: white;
+    color: orange;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.meal-instruction {
+    padding: 1rem 0;
+}
+
+.recipe-meal-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
