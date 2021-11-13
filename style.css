@@ -52,10 +52,11 @@
     box-shadow: 0px 4px 21px -12px rgba(0, 0, 0, 0.79);
 }
 
-.meal-img img{
+.meal-img img {
     width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    display: flex;
 }
 
 .meal-item h3 {
@@ -80,10 +81,17 @@
     padding-bottom: 0.5rem;
 }
 
+.meal-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 3rem ;
+    background: #fff;
+    text-align: center;
+}
 
 .meal {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
 
@@ -100,7 +108,7 @@
     padding: 2rem 0rem;
     overflow-y: scroll;
     text-align: center;
-    /* display: none; */
+    display: none;
 }
 
 .meal-details-content {
