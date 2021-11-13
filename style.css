@@ -131,6 +131,10 @@
     opacity: 0.9;
 }
 
+.close-btn:hover {
+    opacity: 0.7;
+}
+
 .meal-title {
     letter-spacing: 1px;
     padding-bottom: 1rem;
@@ -175,7 +179,7 @@
 }
 
 .meal-link a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
     text-decoration: underline;
 }
 
